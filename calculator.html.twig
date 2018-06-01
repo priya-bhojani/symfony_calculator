@@ -1,0 +1,50 @@
+<form class="form-horizontal" action="{{ path("misc_calculation") }}" method="POST">
+    <fieldset>
+        
+        <!-- Form Name -->
+        <legend>Calculator</legend>
+
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="number_one">Expression one / Number one</label>  
+            <div class="col-md-4">
+                <input id="number_one" name="number_one" type="text" placeholder="" class="form-control input-md" required="">
+
+            </div>
+        </div>
+        
+        <!-- Select Basic -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="operand">Operand</label>
+          <div class="col-md-4">
+            <select id="operand" name="operand" class="form-control">
+              <option value="+">+</option>
+              <option value="-">-</option>
+              <option value="*">*</option>
+              <option value="%">%</option>
+              <option value="||">OR</option>
+              <option value="&&">AND</option>
+            </select>
+          </div>
+        </div>        
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="number_two">Expression two/ Number two</label>  
+            <div class="col-md-4">
+                <input id="number_two" name="number_two" type="text" placeholder="" class="form-control input-md">
+
+            </div>
+        </div>
+        <!-- Button -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="submitbutton"></label>
+            <div class="col-md-4">
+                <button type="submit" id="login-form-submit-btn" class="btn btn--full">Calculate</button>
+            </div>
+        </div>
+    </fieldset>
+</form>
+
+
